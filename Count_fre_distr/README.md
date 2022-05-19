@@ -1,3 +1,4 @@
+# This file display the flow of analysis frequency of SARS-CoV-2 variation site from GISAID's CoV-2 genomes 
 ## 1. Split the accession by time step
 
 The script of split_acc.pl will split the accession from the annotation file of SARS-COV-2 in  GISAID by time step. Firstly, this script will cut the columns of accession and date, and create a tsv file acc2date.tsv, and then convert the date to digital format, and sort the acc2date.tsv file by date, using a soft named csvtk, which will create the file acc2date_one.tsv and acc2date_one_sort.tsv. Secondly, split the file acc2date_one_sort.tsv to a folder named split_acc by step time, the start day is 2019-12-24, and the step time is 10 days, moreover it will count the genome number of each step to a file named date_genome_num.tsv.
